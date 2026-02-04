@@ -1,0 +1,47 @@
+"<!DOCTYPE html>
+<html lang=""zh-TW"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>幸福緣 - 數位儀表板</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; margin: 0; padding: 15px; }
+        .dashboard { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            grid-template-rows: auto;
+            gap: 15px; 
+        }
+        .box { background: white; border-radius: 20px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .box-large { grid-column: span 2; background: #d68a5a; color: white; }
+        .box-title { font-size: 0.9em; color: #888; margin-bottom: 10px; }
+        .box-large .box-title { color: #f0d9c5; }
+        .number { font-size: 1.8em; font-weight: bold; }
+        .icon { font-size: 1.5em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class=""dashboard"">
+        <div class=""box box-large"">
+            <div class=""box-title"">今日幸福主題</div>
+            <div class=""number"">晨光親子時間</div>
+            <p>天使校長陪伴您開啟充滿正能量的一天</p>
+        </div>
+        <div class=""box"">
+            <div class=""icon"">🔬</div>
+            <div class=""box-title"">烘焙科學</div>
+            <div style=""font-weight:bold;"">不漲氣秘密</div>
+        </div>
+        <div class=""box"">
+            <div class=""icon"">🌟</div>
+            <div class=""box-title"">智多星</div>
+            <div style=""font-weight:bold;"">12 則對策</div>
+        </div>
+        <div class=""box box-large"" style=""background:#fff; color:#333;"">
+            <div class=""box-title"">實踐工房</div>
+            <input type=""text"" placeholder=""尋找您的烘焙配方..."" style=""width:100%; padding:10px; border-radius:10px; border:1px solid #ddd; box-sizing:border-box;"">
+        </div>
+    </div>
+</body>
+</html>
+"
